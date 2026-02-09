@@ -1,4 +1,4 @@
-# 🎓 Aditi's Student Portfolio  
+# 🎓 Aditi's Portfolio  
 
 This is my **college student portfolio website**, built using **HTML and CSS**.  
 It showcases my skills, education, and projects in a clean and responsive design.
