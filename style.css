@@ -382,3 +382,17 @@ nav a:hover {
     }
 
 }
+
+@media screen and (max-width: 844px) {
+
+    .main-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .sidebar {
+        position: static !important;
+        height: auto !important;
+    }
+
+}
