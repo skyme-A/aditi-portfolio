@@ -43,7 +43,7 @@ git clone https://github.com/skyme-A/aditi-portfolio.git
 2. Open `index.html` in your browser.
 ## 📬 Connect with Me  
 - GitHub: https://github.com/skyme-A  
-- (Add your LinkedIn or Email here if you want)
+- Linkedin:https://www.linkedin.com/in/aditi-raj-874a10311/
 
 ⭐ **If you like this project, feel free to star the repository!**
 
