@@ -312,19 +312,18 @@ nav a:hover {
 
 @media screen and (max-width: 844px) {
 
-    /* ---- MAIN LAYOUT STACK ---- */
     .main-container {
-        grid-template-columns: 1fr;
+        display: grid !important;
+        /* 👈 ADD THIS */
+        grid-template-columns: 1fr !important;
+        /* 👈 ADD THIS */
         padding: 20px;
         gap: 20px;
     }
 
-    /* ---- SIDEBAR MOBILE ---- */
     .sidebar {
         height: auto;
-        /* remove fixed height */
         position: static;
-        /* remove sticky */
         width: 100%;
         padding: 25px;
     }
@@ -334,7 +333,6 @@ nav a:hover {
         width: 100px;
     }
 
-    /* ---- CONTACT ALIGNMENT (same layout, better spacing) ---- */
     .email,
     .phone,
     .location {
@@ -348,51 +346,31 @@ nav a:hover {
         margin-bottom: 4px;
     }
 
-    /* ---- NAVIGATION MOBILE ---- */
     nav {
         justify-content: center;
         flex-wrap: wrap;
         gap: 12px;
     }
 
-    /* ---- SKILLS GRID MOBILE ---- */
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
-    .item {
-        margin-top: 10px;
-        padding: 15px;
-    }
-
-    /* ---- PROJECTS MOBILE ---- */
     .project-container {
         grid-template-columns: 1fr;
-        /* single column */
     }
 
-    .project img {
-        height: 160px;
-    }
-
-    /* ---- CONTENT PADDING TWEAK ---- */
     .main-content {
         padding: 25px;
     }
 
-}
-
-@media screen and (max-width: 844px) {
-
-    .main-container {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
+    .social {
+        display: flex;
+        justify-content: center;
+        /* 👈 center horizontally */
+        gap: 12px;
+        /* spacing between icons */
+        padding: 20px;
     }
-
-    .sidebar {
-        position: static !important;
-        height: auto !important;
-    }
-
 }
