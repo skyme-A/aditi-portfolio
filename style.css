@@ -310,7 +310,66 @@ nav a:hover {
     margin-right: 5px;
 }
 
-/* ================= SMALL PHONES ================= */
+/* ========== MOBILE (iPhone + Android) ========== */
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-y: auto !important;
+        /* VERTICAL SCROLL ON */
+        overflow-x: hidden !important;
+        /* SIDE SCROLL OFF */
+        height: auto;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 15px;
+        height: auto;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        /* IMPORTANT FOR SCROLL */
+        min-height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .main-content {
+        height: auto;
+        /* IMPORTANT FOR SCROLL */
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile img {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+/* ========== SMALL PHONES (iPhone SE / small Android) ========== */
 @media screen and (max-width: 375px) {
 
     .profile img {
@@ -318,61 +377,13 @@ nav a:hover {
         width: 75px;
     }
 
-    .heading {
-        font-size: 1.35rem;
-    }
-
-    nav a {
-        font-size: 0.85rem;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .project img {
         height: 130px;
     }
 }
 
-/* ================= STANDARD PHONES (iPhone + Android) ================= */
-@media screen and (min-width: 376px) and (max-width: 480px) {
-
-    .main-container {
-        padding: 10px;
-        gap: 20px;
-    }
-
-    .sidebar {
-        padding: 22px;
-        gap: 22px;
-    }
-
-    .profile img {
-        height: 90px;
-        width: 90px;
-    }
-
-    .heading {
-        font-size: 1.5rem;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .project img {
-        height: 150px;
-    }
-
-    .main-content {
-        padding: 20px;
-    }
-}
-
-/* ================= TABLET / iPAD ================= */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/* ========== TABLET / iPAD ========== */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
 
     .main-container {
         grid-template-columns: 1fr;
@@ -381,6 +392,8 @@ nav a:hover {
     }
 
     .sidebar {
+        position: static;
+        height: auto;
         flex-direction: row;
         justify-content: center;
         gap: 40px;
@@ -400,23 +413,7 @@ nav a:hover {
     }
 }
 
-/* ================= LAPTOP / SMALL DESKTOP ================= */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-    .main-container {
-        grid-template-columns: 300px 1fr;
-        gap: 35px;
-        padding: 25px;
-    }
-
-    .sidebar {
-        position: sticky;
-        top: 30px;
-        height: 85vh;
-    }
-}
-
-/* ================= FULL DESKTOP ================= */
+/* ========== LAPTOP + DESKTOP ========== */
 @media screen and (min-width: 1200px) {
 
     .main-container {
