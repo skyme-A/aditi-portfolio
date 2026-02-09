@@ -310,23 +310,75 @@ nav a:hover {
     margin-right: 5px;
 }
 
-/* -------- MOBILE + IPHONE FIX -------- */
 @media screen and (max-width: 844px) {
-    /* iPhone 12/13/14 height support */
 
-    .container,
-    .main-section,
-    .wrapper {
-        /* tumhara main parent div */
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    /* ---- MAIN LAYOUT STACK ---- */
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
     }
 
-    .left,
-    .right {
-        /* profile & skills/edu */
+    /* ---- SIDEBAR MOBILE ---- */
+    .sidebar {
+        height: auto;
+        /* remove fixed height */
+        position: static;
+        /* remove sticky */
         width: 100%;
+        padding: 25px;
+    }
+
+    .profile img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* ---- CONTACT ALIGNMENT (same layout, better spacing) ---- */
+    .email,
+    .phone,
+    .location {
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .email h3,
+    .phone h3,
+    .location h3 {
+        margin-bottom: 4px;
+    }
+
+    /* ---- NAVIGATION MOBILE ---- */
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* ---- SKILLS GRID MOBILE ---- */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .item {
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    /* ---- PROJECTS MOBILE ---- */
+    .project-container {
+        grid-template-columns: 1fr;
+        /* single column */
+    }
+
+    .project img {
+        height: 160px;
+    }
+
+    /* ---- CONTENT PADDING TWEAK ---- */
+    .main-content {
+        padding: 25px;
     }
 
 }
