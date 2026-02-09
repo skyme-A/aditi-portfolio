@@ -384,3 +384,141 @@ nav a:hover {
         padding: 20px;
     }
 }
+
+/* ========================================================= */
+/*  PERFECT ANDROID OPTIMIZATION (Samsung, OnePlus, Pixel, Redmi) */
+/* ========================================================= */
+
+/* -------- Large Android Phones (Pixel 7, S22, OnePlus 11 etc.) -------- */
+@media screen and (max-width: 430px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-container {
+        padding: 8px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+        border-radius: 14px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile img {
+        height: 85px;
+        width: 85px;
+    }
+
+    .profile h2 {
+        font-size: 1.25rem;
+    }
+
+    .contact,
+    .social {
+        padding: 12px 8px;
+    }
+
+    nav {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .heading {
+        font-size: 1.45rem;
+    }
+
+    .line {
+        width: 45px;
+        height: 4px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .item {
+        padding: 12px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .project img {
+        height: 140px;
+    }
+
+    .main-content {
+        padding: 15px;
+        border-radius: 14px;
+    }
+}
+
+/* -------- Small Android (Redmi Lite, Realme C series, older phones) -------- */
+@media screen and (max-width: 375px) {
+
+    .profile img {
+        height: 78px;
+        width: 78px;
+    }
+
+    .profile h2 {
+        font-size: 1.15rem;
+    }
+
+    .heading {
+        font-size: 1.35rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .project img {
+        height: 130px;
+    }
+}
+
+/* -------- Ultra Small (very old Android phones) -------- */
+@media screen and (max-width: 340px) {
+
+    .profile img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
