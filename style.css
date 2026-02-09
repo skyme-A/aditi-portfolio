@@ -310,134 +310,23 @@ nav a:hover {
     margin-right: 5px;
 }
 
-/* ========== MOBILE (iPhone + Android) ========== */
-@media screen and (max-width: 768px) {
+/* -------- MOBILE + IPHONE FIX -------- */
+@media screen and (max-width: 844px) {
+    /* iPhone 12/13/14 height support */
 
-    html,
-    body {
-        overflow-y: auto !important;
-        /* VERTICAL SCROLL ON */
-        overflow-x: hidden !important;
-        /* SIDE SCROLL OFF */
-        height: auto;
-    }
-
-    .main-container {
-        grid-template-columns: 1fr;
-        padding: 10px;
-        gap: 15px;
-        height: auto;
-    }
-
-    .sidebar {
-        position: static;
-        height: auto;
-        /* IMPORTANT FOR SCROLL */
-        min-height: auto;
-        padding: 20px;
+    .container,
+    .main-section,
+    .wrapper {
+        /* tumhara main parent div */
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
         width: 100%;
     }
 
-    .main-content {
-        height: auto;
-        /* IMPORTANT FOR SCROLL */
-        padding: 20px;
+    .left,
+    .right {
+        /* profile & skills/edu */
+        width: 100%;
     }
 
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .project-container {
-        grid-template-columns: 1fr;
-    }
-
-    .profile img {
-        height: 90px;
-        width: 90px;
-    }
-}
-
-/* ========== SMALL PHONES (iPhone SE / small Android) ========== */
-@media screen and (max-width: 375px) {
-
-    .profile img {
-        height: 75px;
-        width: 75px;
-    }
-
-    .project img {
-        height: 130px;
-    }
-}
-
-/* ========== TABLET / iPAD ========== */
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-
-    .main-container {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 30px;
-    }
-
-    .sidebar {
-        position: static;
-        height: auto;
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .project-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .profile img {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-/* ========== LAPTOP + DESKTOP ========== */
-@media screen and (min-width: 1200px) {
-
-    .main-container {
-        grid-template-columns: 350px 1fr;
-        gap: 50px;
-        padding-top: 40px;
-    }
-
-    .sidebar {
-        position: sticky;
-        top: 40px;
-        height: 90vh;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-
-    .project-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .profile img {
-        height: 120px;
-        width: 120px;
-    }
 }
